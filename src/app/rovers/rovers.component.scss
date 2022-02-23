@@ -1,0 +1,28 @@
+@keyframes floating {
+  from {
+    transform: translateY(0px);
+  }
+  65% {
+    transform: translateY(15px);
+  }
+  to {
+    transform: translateY(-0px);
+  }
+}
+
+.universe {
+  background-image: url('/assets/star.svg'),
+    linear-gradient(to bottom, #05007a, #4d007d);
+  height: 100%;
+  background-attachment: fixed;
+  overflow: auto;
+  height: 100vh;
+  width: 100vw;
+}
+
+.astronaut {
+  top: 18vmin;
+  left: 10vmin;
+  height: 30vmin;
+  animation: floating 3s infinite ease-in-out;
+}

@@ -1,0 +1,10 @@
+<form [formGroup]="form">
+  <select
+    class="form-select"
+    aria-label="Rover"
+    formControlName="rover"
+    (change)="onChange()"
+  >
+    <option *ngFor="let rover of rovers" [value]="rover">{{ rover }}</option>
+  </select>
+</form>

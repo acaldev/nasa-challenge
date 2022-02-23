@@ -1,0 +1,13 @@
+<div class="container">
+  <h1 class="text-center text-white">NASA APP</h1>
+  <div class="row">
+    <div class="col-auto mt-5 mx-auto">
+      <app-rover-select (selected)="getPhotos($event)"></app-rover-select>
+    </div>
+  </div>
+  <div class="row">
+    <div *ngFor="let photo of photos" class="col-2 my-2">
+      <app-rover-photo [photo]="photo"></app-rover-photo>
+    </div>
+  </div>
+</div>
